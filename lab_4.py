@@ -29,3 +29,27 @@ print "you have used all your guesses. the correct answer is sacramento"
 
 main
 """
+
+
+def main():
+    question = "What is the capital of California? "
+    answer = "Sacramento"
+    ask(question, answer)
+
+
+
+def ask(question, answer, max_tries=3):
+    tries = 0
+    ans = ""
+    while tries < max_tries:
+        tries += 1
+        ans = input(question)
+        if ans == answer:
+            print("Correct!")
+            break
+    if ans != answer:
+        print("You have used all your guesses the correct answer is Sacramento")
+
+
+main()
+
