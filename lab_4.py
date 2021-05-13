@@ -11,47 +11,21 @@ If user is unable to guess the correct answer within the 3 times it will print
 "You have used up all of your guesses.", "The correct answer is California."
 """
 
-
 """
 main
-question "Capital of california"
+question = "what is the capital of California"
 answer = "sacramento"
 ask(question, answer)
 
-
 ask
 tries =0
-loop 3x
-    tries increment
-    ask user input
-    answer= user input
-    if true print correct
-    brek
-    elif
-    print "you have used all your guesses the correct answer is sacramento"
-
-call main function
+tries + 1
+ask user input
+user input = to answer
+if true print "correct"
+elif
+print "you have used all your guesses. the correct answer is sacramento"
 
 
-
+main
 """
-
-
-def main():
-    question = "What is the capital of California?"
-    answer = "Sacramento"
-    ask(question, answer)
-
-
-def ask(question, answer, max_tries=3):
-    tries = 0
-    while tries < max_tries:
-        tries = tries + 1
-        ans = input(question)
-        if ans == answer:
-            print ("Correct!")
-            break
-    if ans != answer:
-        print("You have used all your guesses. The correct answer is Sacramento")
-      
-main()
